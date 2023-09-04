@@ -1,5 +1,5 @@
-var fullName = 'Tran Hoang Hai';
-var age = 26;
+// var fullName = 'Tran Hoang Hai';
+// var age = 26;
 
 
 // alert(fullName);
@@ -17,7 +17,15 @@ var age = 26;
 // }, 1000) *Dung de set doan code chay sau 1 thoi gian
 
 
-setInterval(function(){
-    console.log('day la log')
-}, 1000)
+// setInterval(function(){
+//     console.log('day la log')  *Thuc hien dung code lap lai sau 1 thoi gian
+// }, 1000)
 
+function run(data) {
+	var arr1 = data.every(data % 2 == 0);
+	if (arr1) {
+		console.log("Yes");
+	} else {
+		console.log("No");
+	}
+}
