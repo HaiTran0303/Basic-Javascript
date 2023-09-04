@@ -21,8 +21,13 @@
 //     console.log('day la log')  *Thuc hien dung code lap lai sau 1 thoi gian
 // }, 1000)
 
+function check(dataValue){
+	return dataValue % 2 == 0
+}
+
 function run(data) {
-	var arr1 = data.every(data % 2 == 0);
+    data = [1,2,3];
+	var arr1 = data.every(check);
 	if (arr1) {
 		console.log("Yes");
 	} else {
